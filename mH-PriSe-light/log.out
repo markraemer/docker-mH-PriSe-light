@@ -1,0 +1,30 @@
+2017-01-15 18:20:05,495 - runner - INFO - Starting ...
+2017-01-15 18:20:05,495 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-15 18:20:07,368 - runner - INFO - ... finished
+2017-01-15 18:33:38,314 - runner - INFO - Starting ...
+2017-01-15 18:33:38,315 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-15 18:33:40,263 - runner - INFO - started access point
+2017-01-15 18:36:13,994 - runner - INFO - ... finished
+2017-01-15 18:40:39,616 - runner - INFO - Starting ...
+2017-01-15 18:40:39,616 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-15 18:40:41,845 - runner - INFO - ... finished
+2017-01-15 18:41:35,940 - runner - INFO - Starting ...
+2017-01-15 18:41:35,941 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-15 18:41:42,493 - runner - INFO - ... finished
+2017-01-15 18:46:27,227 - runner - INFO - Starting ...
+2017-01-15 18:46:27,228 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-15 18:48:19,535 - runner - INFO - Starting ...
+2017-01-15 18:48:19,536 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-15 18:48:54,200 - runner - DEBUG - INSERT INTO pripol SET package= 'com.hapiconnect' , URL=  'http://www.hapi.com/privacypolicy'  on duplicate key update package= 'com.hapiconnect' , URL=  'http://www.hapi.com/privacypolicy'  ;
+2017-01-15 18:49:37,371 - runner - INFO - ... finished
+2017-01-15 18:49:42,796 - runner - INFO - Starting ...
+2017-01-15 18:49:42,797 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-15 19:04:17,842 - runner - INFO - Starting ...
+2017-01-15 19:04:17,842 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-15 19:04:23,535 - runner - DEBUG - INSERT INTO pripol SET package= 'com.hapiconnect' , URL=  'http://www.hapi.com/privacypolicy'  on duplicate key update package= 'com.hapiconnect' , URL=  'http://www.hapi.com/privacypolicy'  ;
+2017-01-15 19:04:30,411 - runner - INFO - com.hapiconnect analyzing manifest
+2017-01-15 19:56:54,898 - runner - INFO - Starting ...
+2017-01-15 19:56:54,899 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-15 19:56:58,069 - runner - INFO - com.hapiconnect analyzing manifest
+2017-01-15 19:56:58,155 - runner - DEBUG - ['aapt', 'dump', 'badging', '/mnt/data/apps/com.hapiconnect/com.hapiconnect.apk'], , 
+2017-01-15 19:57:00,378 - runner - INFO - ... finished
