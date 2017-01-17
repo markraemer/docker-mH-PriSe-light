@@ -23,18 +23,19 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-
 import logging.config
 import os
-import ConfigParser
 
-from playstore import apps_companion,apps_tools
-from apk import extractBaseInfo, runMallodroid, signAnalysis, apkHelper, runEviCheck, runExplainDroid, checkObfuscation
-from onDevice import runDrozer,addonDetector,deviceHelper
-from helper import checkLogFolders, experimentation, experiment_export_overview, experiment_export_latex
-from traffic import trafficAnalysis
-from pick import pick, Picker
+import ConfigParser
+from pick import Picker
+
+from _old import runEviCheck
+from apk import extractBaseInfo, apkHelper
 from bash import bashHelper
+from helper import checkLogFolders, experimentation, experiment_export_overview, experiment_export_latex
+from onDevice import deviceHelper
+from playstore import apps_companion,apps_tools
+from traffic import trafficAnalysis
 from webserver import SSLchecker
 
 logging.config.fileConfig('logging.conf')
@@ -87,7 +88,7 @@ menu_tree = {
         'menu': {
             "1 - toggle hotspot": (bashHelper.toggleHostpot, None),
             "2 - PREPARE analysis": ('menu', ['prepare']),
-            "3 - STATIC analysis": ('menu', ['static']),
+            #"3 - STATIC analysis": ('menu', ['static']),
             "4 - DYNAMIC analysis": ('menu', ['dynamic']), # should choose package first
             "5 - POST experiment analysis": ('menu', ['post']),  # should choose packge -> test case first
             "6 - export results": ('menu', ['export']),
@@ -101,13 +102,13 @@ menu_tree = {
     'static' : {
         'menu': {
             "1 - extract base info": (extractBaseInfo.apkInfo,[]),
-            "2 - run mallodroid": (runMallodroid.do,[]),
-            "3 - intents, broadcasts, activities, services exports (Drozer)": (runDrozer.do,[]),
-            "4 - signature certificate info (developer certificate": (signAnalysis.certInfo,[]),
-            "5 - detect addons": (addonDetector.do,[]),
-            "6 - check obfuscation": (checkObfuscation.do,[]),
-            "7 - Malware / Evicheck": (runEviCheck.do,[]),
-            "8 - Malware / ExplainDroid": (runExplainDroid.do,[]),
+            #"2 - run mallodroid": (runMallodroid.do, []),
+            #"3 - intents, broadcasts, activities, services exports (Drozer)": (runDrozer.do, []),
+            #"4 - signature certificate info (developer certificate": (signAnalysis.certInfo,[]),
+            #"5 - detect addons": (addonDetector.do, []),
+            #"6 - check obfuscation": (checkObfuscation.do, []),
+            #"7 - Malware / Evicheck": (runEviCheck.do, []),
+            #"8 - Malware / ExplainDroid": (runExplainDroid.do, []),
             "quit": None
         },
         'title': "Static analysis",

@@ -4,9 +4,9 @@ import logging.config
 logging.config.fileConfig('logging.conf')
 logger = logging.getLogger('runner')
 
-from apk.mallodroid import mallodroid
+from _old.mallodroid import mallodroid
 from db.Apps import Apps
-from db.Mallodroid import Mallodroid
+from _old.Mallodroid import Mallodroid
 
 from androguard.core.bytecodes import apk, dvm
 from androguard.core.analysis.analysis import uVMAnalysis

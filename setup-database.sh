@@ -16,7 +16,7 @@ else
     /usr/bin/mysqld_safe > /dev/null 2>&1 &
     sleep 5
     mysql -e "set password=PASSWORD('root')"
-    mysql -uroot -proot < /usr/src/app/mH-PriSe/backups/Dump20160719.sql
+    mysql -uroot -proot < /mnt/data/data/mysql_dump.sql
     echo "shutting down database"
     mysqladmin -uroot -proot shutdown
 fi

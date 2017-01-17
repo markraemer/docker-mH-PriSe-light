@@ -10,7 +10,7 @@ import subprocess
 
 from db.Apps import Apps
 from db.CodeAnalysis import CodeAnalysis
-from db.Drozer import Drozer
+from _old.Drozer import Drozer
 
 
 # initialize configuration parser

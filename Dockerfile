@@ -1,6 +1,6 @@
 # Building up Docker file for master thesis framework
 
-FROM phusion/baseimage:latest
+FROM ubuntu:16.04
 FROM python:2-onbuild
 
 MAINTAINER Martin Kraemer <info@martin-kraemer.net>
@@ -8,10 +8,41 @@ MAINTAINER Martin Kraemer <info@martin-kraemer.net>
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
   apt-get -y install apt-utils && \
-  apt-get install -y dnsmasq hostapd iptables python supervisor mysql-server \
-		unzip default-jdk nano lib32stdc++6 lib32z1
+  apt-get install -y \
+  dnsmasq hostapd iptables network-manager net-tools rfkill\
+  nano openssh-server gnome-terminal apache2 phpmyadmin\
+  supervisor sudo \
+  python mysql-server unzip default-jdk lib32stdc++6 lib32z1
 
-RUN sed -i -e"s/^bind-address\s*=\s*127.0.0.1/bind-address = 0.0.0.0/" /etc/mysql/my.cnf
+## setting up X11
+RUN useradd -d /home/rlogin -m rlogin && echo 'rlogin:rlogin' | chpasswd
+# Replace 1000 with your user / group id
+RUN export uid=1000 gid=1000 && \
+    mkdir -p /home/rlogin && \
+    echo "rlogin:x:${uid}:${gid}:Rlogin,,,:/home/rlogin:/bin/bash" >> /etc/passwd && \
+    echo "rlogin:x:${uid}:" >> /etc/group && \
+    echo "rlogin ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/rlogin && \
+    chmod 0440 /etc/sudoers.d/rlogin && \
+    chown ${uid}:${gid} -R /home/rlogin
+#USER rlogin
+#ENV HOME /home/rlogin
+
+## setting up ssh
+RUN mkdir /var/run/sshd
+RUN echo 'root:screencast' | chpasswd
+RUN sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+
+# SSH login fix. Otherwise user is kicked off after login
+RUN sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
+
+ENV NOTVISIBLE "in users profile"
+RUN echo "export VISIBLE=now" >> /etc/profile
+
+## mysql config
+#RUN sed -i -e"s/^bind-address\s*=\s*127.0.0.1/bind-address = 0.0.0.0/" /etc/mysql/my.cnf
+
+##apache & phpmyadmin
+RUN echo "Include /etc/phpmyadmin/apache.conf" >> /etc/apache2/apache2.conf
 
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ADD setup-database.sh /setup-database.sh
@@ -25,7 +56,7 @@ RUN rm -rf /var/lib/mysql
 
 # Add volumes for the app and MySql
 VOLUME  ["/var/mH-PriSe/mysql", "/var/lib/mysql"]
-VOLUME  ["/home/martin/repos/docker-mhPrise/mH-PriSe", "/usr/src/app/framework"]
+VOLUME  ["/home/martin/repos/docker-mhPrise/mH-PriSe-light", "/usr/src/app/framework"]
 VOLUME  ["/home/martin/repos/docker-mhPrise/conf", "/usr/src/app/config"]
 
 
@@ -54,3 +85,5 @@ ENV PATH $PATH:${ANDROID_HOME}/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/
 CMD ["/run.sh"]
 
 EXPOSE 3306
+EXPOSE 22
+EXPOSE 80

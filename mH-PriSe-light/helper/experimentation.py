@@ -7,12 +7,10 @@ logger = logging.getLogger('runner')
 
 import os
 import ConfigParser
-import subprocess
 import datetime
 import copy
 import time
 import numpy as np
-import json
 from terminaltables import AsciiTable
 
 from pick import pick
@@ -23,9 +21,6 @@ from db.TestCases import TestCases
 from db.TestSteps import TestSteps
 from db.ExperimentsDetails import ExperimentsDetails
 from db.Devices import Devices
-from db.CodeAnalysis import CodeAnalysis
-from db.Drozer import Drozer
-
 
 # initialize configuration parser
 config = ConfigParser.RawConfigParser()
@@ -209,7 +204,7 @@ def stop_capture_phone(app_recordingpath, package):
 
 
 def start_recording(context, package, testcase, device):
-    #TODO organise different tools in functions and map functions to test cases --> recodring depends on test cases
+
     experiment = Experiments()
     ts = time.time()
     st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d_%H:%M:%S')
@@ -229,7 +224,8 @@ def start_recording(context, package, testcase, device):
     experiment.upsert()
 
     if testcase != "sol_arch":
-        start_screen_cast(app_recordingpath)
+        # FULL VERSION ONLY
+        # start_screen_cast(app_recordingpath)
 
         if testcase == "av6_web_application":
             start_capture_network(app_recordingpath,"wo")
@@ -242,7 +238,8 @@ def start_recording(context, package, testcase, device):
 
         stop_capture_network()
 
-        stop_screen_cast()
+        # FULL VERSION ONLY
+        # stop_screen_cast()
 
         if testcase != "av6_web_application":
             stop_capture_phone(app_recordingpath, package)

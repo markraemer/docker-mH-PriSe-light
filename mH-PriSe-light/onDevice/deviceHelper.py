@@ -16,8 +16,6 @@ import subprocess
 from copy import copy
 
 from db.Apps import Apps
-from db.CodeAnalysis import CodeAnalysis
-from db.Drozer import Drozer
 
 adb_command = []
 

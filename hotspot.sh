@@ -61,27 +61,27 @@ function start_hotspot() {
   # Start DHCP/DNS server
   #sudo dnsmasq -C /etc/dnsmasq.conf -H /etc/fakehosts.conf -d
   cat /etc/dnsmasq.conf
-  sudo service dnsmasq restart
+  service dnsmasq restart
   # Enable routing
-  sudo sysctl net.ipv4.ip_forward=1
+  sysctl net.ipv4.ip_forward=1
   # Enable NAT
-  sudo iptables -t nat -A POSTROUTING -o ${OUTGOINGS} -j MASQUERADE
+  iptables -t nat -A POSTROUTING -o ${OUTGOINGS} -j MASQUERADE
   # route traffic through MITMproxy
   # sudo iptables -t nat -A PREROUTING -i ${INTERFACE} -p tcp --dport 443 -j REDIRECT --to-port 8080
   # sudo iptables -t nat -A PREROUTING -i ${INTERFACE} -p tcp --dport 80 -j REDIRECT --to-port 8080
   # Run access point daemon
-  sudo hostapd /etc/hostapd/hostapd.conf
+  hostapd /etc/hostapd/hostapd.conf
   # Stop
   # Disable NAT
-  sudo iptables -D POSTROUTING -t nat -o ${OUTGOINGS} -j MASQUERADE
+  iptables -D POSTROUTING -t nat -o ${OUTGOINGS} -j MASQUERADE
   # Delete routing rules for mitmproxy
   # sudo iptables -t nat -D PREROUTING -i ${INTERFACE} -p tcp --dport 443 -j REDIRECT --to-port 8080
   # sudo iptables -t nat -D PREROUTING -i ${INTERFACE} -p tcp --dport 80 -j REDIRECT --to-port 8080
   # Disable routing
-  sudo sysctl net.ipv4.ip_forward=0
+  sysctl net.ipv4.ip_forward=0
   # Disable DHCP/DNS server
-  sudo service dnsmasq stop
-  sudo service hostapd stop
+  service dnsmasq stop
+  service hostapd stop
 
 }
 

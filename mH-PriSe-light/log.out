@@ -28,3 +28,76 @@
 2017-01-15 19:56:58,069 - runner - INFO - com.hapiconnect analyzing manifest
 2017-01-15 19:56:58,155 - runner - DEBUG - ['aapt', 'dump', 'badging', '/mnt/data/apps/com.hapiconnect/com.hapiconnect.apk'], , 
 2017-01-15 19:57:00,378 - runner - INFO - ... finished
+2017-01-15 21:14:34,760 - runner - INFO - Starting ...
+2017-01-15 21:14:34,760 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-16 18:07:41,453 - runner - INFO - Starting ...
+2017-01-16 18:07:41,453 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-16 18:07:44,094 - runner - INFO - ... finished
+2017-01-16 18:17:59,953 - runner - INFO - Starting ...
+2017-01-16 18:17:59,953 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-16 18:23:18,679 - runner - INFO - Starting ...
+2017-01-16 18:23:18,679 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-16 18:24:36,916 - runner - DEBUG - INSERT INTO experiments SET package='com.fitbit.FitbitMobile', device='2', time='2017-01-16 18:24:36', test_case='av1_data_trans', log_folder='/media/exthdd/experiments/com.fitbit.FitbitMobile/device-2/av1_data_trans/2017-01-16_18:24:36' on duplicate key update package='com.fitbit.FitbitMobile', device='2', time='2017-01-16 18:24:36', test_case='av1_data_trans', log_folder='/media/exthdd/experiments/com.fitbit.FitbitMobile/device-2/av1_data_trans/2017-01-16_18:24:36' ;
+2017-01-16 18:24:40,738 - runner - DEBUG - stopping mitmproxy
+2017-01-16 18:24:40,757 - runner - DEBUG - stopping packet capture
+2017-01-16 18:24:40,763 - runner - DEBUG - stopping recording
+2017-01-16 18:24:40,770 - runner - DEBUG - copying hci bluetooth log
+2017-01-16 18:24:40,776 - runner - DEBUG - retrieving logcat logs
+2017-01-16 18:24:42,193 - runner - DEBUG - pulling full appliation backup
+2017-01-16 18:24:51,107 - runner - INFO - Starting ...
+2017-01-16 18:24:51,108 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-16 18:25:02,249 - runner - INFO - Starting ...
+2017-01-16 18:25:02,250 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-16 18:26:34,865 - runner - INFO - ... finished
+2017-01-16 18:33:16,359 - runner - INFO - Starting ...
+2017-01-16 18:33:16,359 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-16 18:33:37,291 - runner - INFO - ... finished
+2017-01-17 19:01:11,824 - runner - INFO - Starting ...
+2017-01-17 19:01:11,825 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-17 19:01:15,619 - runner - INFO - Starting ...
+2017-01-17 19:01:15,619 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-17 19:02:46,463 - runner - INFO - Starting ...
+2017-01-17 19:02:46,463 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-17 19:06:49,258 - runner - INFO - Starting ...
+2017-01-17 19:06:49,258 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-17 19:08:44,187 - runner - INFO - started access point
+2017-01-17 19:13:53,241 - runner - INFO - ... finished
+2017-01-17 19:15:50,008 - runner - INFO - Starting ...
+2017-01-17 19:15:50,008 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-17 19:15:51,129 - runner - INFO - started access point
+2017-01-17 19:15:56,326 - runner - INFO - ... finished
+2017-01-17 19:17:17,585 - runner - INFO - Starting ...
+2017-01-17 19:17:17,585 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-17 19:17:18,611 - runner - INFO - started access point
+2017-01-17 19:17:22,865 - runner - INFO - ... finished
+2017-01-17 20:03:02,877 - runner - INFO - Starting ...
+2017-01-17 20:03:02,877 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-17 20:03:03,655 - runner - INFO - started access point
+2017-01-17 20:03:07,277 - runner - INFO - ... finished
+2017-01-17 20:03:24,300 - runner - INFO - Starting ...
+2017-01-17 20:03:24,301 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-17 20:03:26,804 - runner - INFO - ... finished
+2017-01-17 20:04:02,814 - runner - INFO - Starting ...
+2017-01-17 20:04:02,814 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-17 20:04:03,549 - runner - INFO - stopped access point
+2017-01-17 20:04:20,306 - runner - DEBUG - INSERT INTO experiments SET package='com.activ8rlives.mobile', device='1', time='2017-01-17 20:04:20', test_case='av1_data_trans', log_folder='/media/exthdd/experiments/com.activ8rlives.mobile/device-1/av1_data_trans/2017-01-17_20:04:20' on duplicate key update package='com.activ8rlives.mobile', device='1', time='2017-01-17 20:04:20', test_case='av1_data_trans', log_folder='/media/exthdd/experiments/com.activ8rlives.mobile/device-1/av1_data_trans/2017-01-17_20:04:20' ;
+2017-01-17 20:05:02,517 - runner - DEBUG - stopping mitmproxy
+2017-01-17 20:05:02,535 - runner - DEBUG - stopping packet capture
+2017-01-17 20:05:02,554 - runner - DEBUG - stopping recording
+2017-01-17 20:05:02,575 - runner - DEBUG - copying hci bluetooth log
+2017-01-17 20:05:02,589 - runner - DEBUG - retrieving logcat logs
+2017-01-17 20:05:04,540 - runner - DEBUG - pulling full appliation backup
+2017-01-17 20:05:06,580 - runner - DEBUG - stopping app
+2017-01-17 20:05:07,767 - runner - DEBUG - INSERT INTO experiments SET package='com.activ8rlives.mobile', device='1', time='2017-01-17 20:04:20', test_case='av1_data_trans', comment='', log_folder='/media/exthdd/experiments/com.activ8rlives.mobile/device-1/av1_data_trans/2017-01-17_20:04:20' on duplicate key update package='com.activ8rlives.mobile', device='1', time='2017-01-17 20:04:20', test_case='av1_data_trans', comment='', log_folder='/media/exthdd/experiments/com.activ8rlives.mobile/device-1/av1_data_trans/2017-01-17_20:04:20' ;
+2017-01-17 20:28:40,536 - runner - INFO - ... finished
+2017-01-17 21:09:37,005 - runner - INFO - Starting ...
+2017-01-17 21:09:37,005 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-17 21:09:37,811 - runner - INFO - started access point
+2017-01-17 21:10:01,726 - runner - DEBUG - INSERT INTO experiments SET package='com.activ8rlives.mobile', device='1', time='2017-01-17 21:10:01', test_case='av1_data_trans', log_folder='/media/exthdd/experiments/com.activ8rlives.mobile/device-1/av1_data_trans/2017-01-17_21:10:01' on duplicate key update package='com.activ8rlives.mobile', device='1', time='2017-01-17 21:10:01', test_case='av1_data_trans', log_folder='/media/exthdd/experiments/com.activ8rlives.mobile/device-1/av1_data_trans/2017-01-17_21:10:01' ;
+2017-01-17 21:10:23,048 - runner - DEBUG - stopping mitmproxy
+2017-01-17 21:10:23,070 - runner - DEBUG - stopping packet capture
+2017-01-17 21:10:23,087 - runner - DEBUG - copying hci bluetooth log
+2017-01-17 21:10:23,112 - runner - DEBUG - retrieving logcat logs
+2017-01-17 21:10:23,321 - runner - DEBUG - pulling full appliation backup
+2017-01-17 21:10:29,036 - runner - DEBUG - stopping app
+2017-01-17 21:10:32,847 - runner - DEBUG - INSERT INTO experiments SET package='com.activ8rlives.mobile', device='1', time='2017-01-17 21:10:01', test_case='av1_data_trans', comment='n', log_folder='/media/exthdd/experiments/com.activ8rlives.mobile/device-1/av1_data_trans/2017-01-17_21:10:01' on duplicate key update package='com.activ8rlives.mobile', device='1', time='2017-01-17 21:10:01', test_case='av1_data_trans', comment='n', log_folder='/media/exthdd/experiments/com.activ8rlives.mobile/device-1/av1_data_trans/2017-01-17_21:10:01' ;

@@ -13,3 +13,4 @@ terminaltables
 lxml
 jinja2
 matplotlib
+mitmproxy==0.18.2
