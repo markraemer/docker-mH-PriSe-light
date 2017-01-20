@@ -246,3 +246,57 @@
 2017-01-20 14:54:16,532 - runner - DEBUG - copying hci bluetooth log
 2017-01-20 14:54:16,535 - runner - DEBUG - retrieving logcat logs
 2017-01-20 14:54:17,218 - runner - DEBUG - pulling full appliation backup
+2017-01-20 15:54:06,707 - runner - INFO - Starting ...
+2017-01-20 15:54:06,708 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 15:56:19,465 - runner - INFO - Starting ...
+2017-01-20 15:56:19,465 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 15:56:39,283 - runner - INFO - ... finished
+2017-01-20 16:15:40,657 - runner - INFO - Starting ...
+2017-01-20 16:15:40,657 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 16:15:45,778 - runner - DEBUG - INSERT INTO experiments SET package='com.hapiconnect', device='1', time='2017-01-20 16:15:45', test_case='av1_data_trans', log_folder='/media/exthdd/experiments/com.hapiconnect/device-1/av1_data_trans/2017-01-20_16:15:45' on duplicate key update package='com.hapiconnect', device='1', time='2017-01-20 16:15:45', test_case='av1_data_trans', log_folder='/media/exthdd/experiments/com.hapiconnect/device-1/av1_data_trans/2017-01-20_16:15:45' ;
+2017-01-20 16:16:02,149 - runner - DEBUG - stopping mitmproxy
+2017-01-20 16:16:02,160 - runner - DEBUG - stopping packet capture
+2017-01-20 16:16:02,168 - runner - DEBUG - copying hci bluetooth log
+2017-01-20 16:16:02,173 - runner - DEBUG - retrieving logcat logs
+2017-01-20 16:16:04,855 - runner - DEBUG - pulling full appliation backup
+2017-01-20 16:16:07,013 - runner - DEBUG - stopping app
+2017-01-20 16:16:08,414 - runner - DEBUG - INSERT INTO experiments SET package='com.hapiconnect', device='1', time='2017-01-20 16:15:45', test_case='av1_data_trans', comment='n', log_folder='/media/exthdd/experiments/com.hapiconnect/device-1/av1_data_trans/2017-01-20_16:15:45' on duplicate key update package='com.hapiconnect', device='1', time='2017-01-20 16:15:45', test_case='av1_data_trans', comment='n', log_folder='/media/exthdd/experiments/com.hapiconnect/device-1/av1_data_trans/2017-01-20_16:15:45' ;
+2017-01-20 16:16:10,919 - runner - INFO - ... finished
+2017-01-20 16:16:34,430 - runner - INFO - Starting ...
+2017-01-20 16:16:34,430 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 16:16:50,002 - runner - INFO - ... finished
+2017-01-20 16:18:50,506 - runner - INFO - Starting ...
+2017-01-20 16:18:50,506 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 16:18:56,231 - runner - INFO - ... finished
+2017-01-20 16:19:31,606 - runner - INFO - Starting ...
+2017-01-20 16:19:31,606 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 16:19:37,528 - runner - INFO - ... finished
+2017-01-20 16:20:18,833 - runner - INFO - Starting ...
+2017-01-20 16:20:18,833 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 16:20:24,369 - runner - INFO - ... finished
+2017-01-20 16:20:46,851 - runner - INFO - Starting ...
+2017-01-20 16:20:46,851 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 16:20:52,383 - runner - INFO - ... finished
+2017-01-20 16:26:32,490 - runner - INFO - Starting ...
+2017-01-20 16:26:32,490 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 16:26:38,827 - runner - INFO - ... finished
+2017-01-20 16:30:44,285 - runner - INFO - Starting ...
+2017-01-20 16:30:44,286 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 16:30:51,988 - runner - INFO - ... finished
+2017-01-20 16:31:12,889 - runner - INFO - Starting ...
+2017-01-20 16:31:12,889 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 16:31:18,340 - runner - INFO - ... finished
+2017-01-20 16:32:15,009 - runner - INFO - Starting ...
+2017-01-20 16:32:15,009 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 16:32:20,172 - runner - INFO - ... finished
+2017-01-20 16:50:25,053 - runner - INFO - Starting ...
+2017-01-20 16:50:25,053 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 16:51:41,170 - runner - INFO - Starting ...
+2017-01-20 16:51:41,170 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 16:51:50,450 - runner - INFO - com.hapiconnect starting dissambly to smali
+2017-01-20 17:13:40,385 - runner - INFO - Starting ...
+2017-01-20 17:13:40,386 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 17:13:45,860 - runner - INFO - ... finished
+2017-01-20 17:15:28,916 - runner - INFO - Starting ...
+2017-01-20 17:15:28,916 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 17:15:48,301 - runner - INFO - ... finished

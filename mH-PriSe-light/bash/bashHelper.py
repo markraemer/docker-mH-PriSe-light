@@ -34,11 +34,12 @@ def runProgram(program, args=None):
 
 def dump_tables():
     tables = ['devices','view_addons','am', 'view_app_perm','apps','certificates','experiment_overview','pripol','view_malware','view_obfuscation']
-    path = "doc/tabledata"
+    path = "/mnt/data/doc/tabledata"
     for table in tables:
         cmd = "sh bash/dump_table_to_csv.sh {} {}".format(table, path)
         p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         out, err = p.communicate()
+        print out, err
 
 
 def open_log(context):

@@ -3,8 +3,9 @@
 sudo docker run \
 -v /var/mH-PriSe/mysql:/var/lib/mysql \
 -v /var/mH-PriSe/data:/mnt/data \
--v /home/martin/repos/docker-mhPrise/conf/:/usr/src/app/config \
--v /home/martin/repos/docker-mhPrise/mH-PriSe-light:/usr/src/app/framework \
+-v `pwd`/conf/:/usr/src/app/config \
+-v `pwd`/mH-PriSe-light:/usr/src/app/framework \
+-v $HOME/.Xauthority:/home/rlogin/.Xauthority \
 -t \
 -i \
 -ti \
@@ -17,4 +18,5 @@ sudo docker run \
 -p 22:22 \
 --privileged \
 --net host \
+--name mh-prise \
 martin/test:v1

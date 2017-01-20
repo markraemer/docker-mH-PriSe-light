@@ -91,8 +91,8 @@ menu_tree = {
             #"3 - STATIC analysis": ('menu', ['static']),
             "4 - DYNAMIC analysis": ('menu', ['dynamic']), # should choose package first
             "5 - POST experiment analysis": ('menu', ['post']),  # should choose packge -> test case first
-            "6 - export results": ('menu', ['export']),
-            "7 - tools and helper": ('menu', ['tools']),
+            #"6 - export results": ('menu', ['export']),
+            #"7 - tools and helper": ('menu', ['tools']),
             "8 - open log file": (bashHelper.open_log, [context]),
             "quit": None
         },
@@ -129,7 +129,7 @@ menu_tree = {
             "1 - extract URLs": (trafficAnalysis.for_rec_experiment,[context, True]),
             "2 - scan PCAP files": (trafficAnalysis.analysePCAP,[context]),
             "3 - check server SSL": (SSLchecker.do,[context]),
-            "4 - show recording": ('menu', ['show']),
+            "4 - show network traces": (experimentation.show_traces, [context]),
             "quit": None
         },
         'title': "post experiments analysis",

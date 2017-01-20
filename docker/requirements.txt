@@ -1,0 +1,16 @@
+pip
+ConfigParser
+picker
+pick
+pdfkit
+MySQL-python
+requests
+protobuf
+androguard
+bs4
+numpy
+terminaltables
+lxml
+jinja2
+matplotlib
+mitmproxy==0.18.2
