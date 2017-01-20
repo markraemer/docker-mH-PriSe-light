@@ -74,8 +74,8 @@ def change_package(dest_menu):
 menu_tree = {
     'prepare': {
         'menu': {
-            #"1 - maintain apps list": (bashHelper.runProgram, ["gedit", config.get("apps","apps.companion.list")]),
-            #"2 - maintain tools apps list": (bashHelper.runProgram, ["gedit", config.get("apps","tool.apk.tools.list")]),
+            "1 - maintain apps list": (bashHelper.runProgram, ["nano", config.get("apps","apps.companion.list")]),
+            "2 - maintain tools apps list": (bashHelper.runProgram, ["nano", config.get("apps","tool.apk.tools.list")]),
             "3 - download and install tools": (apps_tools.do,[True]),
             "4 - download all companion apks": (apps_companion.download, []),
             "5 - install companion apks": (apps_companion.install, []),

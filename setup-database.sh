@@ -17,6 +17,8 @@ else
     sleep 5
     mysql -e "set password=PASSWORD('root')"
     mysql -uroot -proot < /mnt/data/data/mysql_dump.sql
+    gzip -d /usr/share/doc/phpmyadmin/examples/create_tables.sql.gz
+    mysql -uroot -proot < /usr/share/doc/phpmyadmin/examples/create_tables.sql
     echo "shutting down database"
     mysqladmin -uroot -proot shutdown
 fi

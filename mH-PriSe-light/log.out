@@ -101,3 +101,148 @@
 2017-01-17 21:10:23,321 - runner - DEBUG - pulling full appliation backup
 2017-01-17 21:10:29,036 - runner - DEBUG - stopping app
 2017-01-17 21:10:32,847 - runner - DEBUG - INSERT INTO experiments SET package='com.activ8rlives.mobile', device='1', time='2017-01-17 21:10:01', test_case='av1_data_trans', comment='n', log_folder='/media/exthdd/experiments/com.activ8rlives.mobile/device-1/av1_data_trans/2017-01-17_21:10:01' on duplicate key update package='com.activ8rlives.mobile', device='1', time='2017-01-17 21:10:01', test_case='av1_data_trans', comment='n', log_folder='/media/exthdd/experiments/com.activ8rlives.mobile/device-1/av1_data_trans/2017-01-17_21:10:01' ;
+2017-01-20 11:21:16,758 - runner - INFO - Starting ...
+2017-01-20 11:21:16,758 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 11:21:57,409 - runner - INFO - ... finished
+2017-01-20 11:22:29,525 - runner - INFO - Starting ...
+2017-01-20 11:22:29,525 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 11:23:24,031 - runner - DEBUG - INSERT INTO pripol SET package= 'com.hapiconnect' , URL=  'http://www.hapi.com/privacypolicy'  on duplicate key update package= 'com.hapiconnect' , URL=  'http://www.hapi.com/privacypolicy'  ;
+2017-01-20 11:23:27,385 - runner - INFO - ... finished
+2017-01-20 11:24:01,415 - runner - INFO - Starting ...
+2017-01-20 11:24:01,415 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 11:24:29,960 - runner - INFO - ... finished
+2017-01-20 11:24:32,251 - runner - INFO - Starting ...
+2017-01-20 11:24:32,251 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 11:24:43,652 - runner - INFO - Starting ...
+2017-01-20 11:24:43,652 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 11:27:16,861 - runner - INFO - ... finished
+2017-01-20 13:55:35,818 - runner - INFO - Starting ...
+2017-01-20 13:55:35,818 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 13:57:54,521 - runner - INFO - ... finished
+2017-01-20 13:57:55,945 - runner - INFO - Starting ...
+2017-01-20 13:57:55,945 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 13:58:57,049 - runner - INFO - Starting ...
+2017-01-20 13:58:57,050 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 14:00:24,065 - runner - INFO - Starting ...
+2017-01-20 14:00:24,066 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 14:00:38,882 - runner - INFO - Starting ...
+2017-01-20 14:00:38,883 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 14:03:24,070 - runner - INFO - Starting ...
+2017-01-20 14:03:24,071 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 14:04:48,828 - runner - INFO - Starting ...
+2017-01-20 14:04:48,828 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 14:05:58,884 - runner - INFO - Starting ...
+2017-01-20 14:05:58,885 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 14:08:32,159 - runner - INFO - Starting ...
+2017-01-20 14:08:32,159 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 14:08:36,497 - runner - INFO - 393 com.hapiconnect 2016-07-21 15:19:03 analyzing
+2017-01-20 14:08:36,498 - runner - DEBUG - 393 extracting URLs
+2017-01-20 14:08:36,500 - runner - DEBUG - mitmdump -q -ns "traffic/mitm_extractURLs.py com.hapiconnect av1_data_trans '2016-07-21 15:19:03'" -r "/media/exthdd/experiments/com.hapiconnect/av1_data_trans/2016-07-21_15:19:03/mitm.out" -w /dev/null
+2017-01-20 14:08:37,196 - runner - INFO - com.hapiconnect generating traffic map
+2017-01-20 14:10:17,598 - runner - INFO - Starting ...
+2017-01-20 14:10:17,598 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 14:10:20,883 - runner - INFO - 393 com.hapiconnect 2016-07-21 15:19:03 analyzing
+2017-01-20 14:10:20,884 - runner - DEBUG - 393 extracting URLs
+2017-01-20 14:10:20,885 - runner - DEBUG - mitmdump -q -ns "traffic/mitm_extractURLs.py com.hapiconnect av1_data_trans '2016-07-21 15:19:03'" -r "/mnt/data/experiments/com.hapiconnect/av1_data_trans/2016-07-21_15:19:03/mitm.out" -w /dev/null
+2017-01-20 14:10:21,427 - runner - INFO - com.hapiconnect generating traffic map
+2017-01-20 14:10:39,842 - runner - INFO - ... finished
+2017-01-20 14:14:08,721 - runner - INFO - Starting ...
+2017-01-20 14:14:08,721 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 14:14:23,859 - runner - INFO - 393 com.hapiconnect 2016-07-21 15:19:03 analyzing
+2017-01-20 14:14:23,860 - runner - DEBUG - 393 extracting URLs
+2017-01-20 14:14:23,861 - runner - DEBUG - mitmdump -q -ns "traffic/mitm_extractURLs.py com.hapiconnect av1_data_trans '2016-07-21 15:19:03'" -r "/mnt/data/experiments/com.hapiconnect/av1_data_trans/2016-07-21_15:19:03/mitm.out" -w /dev/null
+2017-01-20 14:14:24,489 - runner - INFO - com.hapiconnect generating traffic map
+2017-01-20 14:14:31,345 - runner - INFO - ... finished
+2017-01-20 14:16:22,676 - runner - INFO - Starting ...
+2017-01-20 14:16:22,676 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 14:16:28,455 - runner - INFO - 393 com.hapiconnect 2016-07-21 15:19:03 analyzing
+2017-01-20 14:16:28,457 - runner - DEBUG - 393 extracting URLs
+2017-01-20 14:16:28,458 - runner - DEBUG - mitmdump -q -ns "traffic/mitm_extractURLs.py com.hapiconnect av1_data_trans '2016-07-21 15:19:03'" -r "/mnt/data/experiments/com.hapiconnect/av1_data_trans/2016-07-21_15:19:03/mitm.out" -w /dev/null
+2017-01-20 14:16:29,034 - runner - INFO - com.hapiconnect generating traffic map
+2017-01-20 14:16:34,562 - runner - INFO - ... finished
+2017-01-20 14:26:24,196 - runner - INFO - Starting ...
+2017-01-20 14:26:24,196 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 14:26:27,909 - runner - INFO - 393 com.hapiconnect 2016-07-21 15:19:03 analyzing
+2017-01-20 14:26:27,910 - runner - DEBUG - 393 extracting URLs
+2017-01-20 14:26:27,911 - runner - DEBUG - mitmdump -q -ns "traffic/mitm_extractURLs.py com.hapiconnect av1_data_trans '2016-07-21 15:19:03'" -r "/mnt/data/experiments/com.hapiconnect/av1_data_trans/2016-07-21_15:19:03/mitm.out" -w /dev/null
+2017-01-20 14:26:28,481 - runner - INFO - com.hapiconnect generating traffic map
+2017-01-20 14:26:32,884 - runner - INFO - ... finished
+2017-01-20 14:26:47,568 - runner - INFO - Starting ...
+2017-01-20 14:26:47,569 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 14:26:50,868 - runner - INFO - 393 com.hapiconnect 2016-07-21 15:19:03 analyzing
+2017-01-20 14:26:50,868 - runner - DEBUG - 393 extracting URLs
+2017-01-20 14:26:50,869 - runner - DEBUG - mitmdump -q -ns "traffic/mitm_extractURLs.py com.hapiconnect av1_data_trans '2016-07-21 15:19:03'" -r "/mnt/data/experiments/com.hapiconnect/av1_data_trans/2016-07-21_15:19:03/mitm.out" -w /dev/null
+2017-01-20 14:26:51,447 - runner - INFO - com.hapiconnect generating traffic map
+2017-01-20 14:26:55,517 - runner - INFO - ... finished
+2017-01-20 14:28:26,159 - runner - INFO - Starting ...
+2017-01-20 14:28:26,159 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 14:28:30,972 - runner - INFO - 393 com.hapiconnect 2016-07-21 15:19:03 analyzing
+2017-01-20 14:28:30,974 - runner - DEBUG - 393 extracting URLs
+2017-01-20 14:28:30,975 - runner - DEBUG - mitmdump -q -ns "traffic/mitm_extractURLs.py com.hapiconnect av1_data_trans '2016-07-21 15:19:03'" -r "/mnt/data/experiments/com.hapiconnect/av1_data_trans/2016-07-21_15:19:03/mitm.out" -w /dev/null
+2017-01-20 14:29:53,981 - runner - INFO - com.hapiconnect generating traffic map
+2017-01-20 14:30:13,046 - runner - INFO - ... finished
+2017-01-20 14:31:23,792 - runner - INFO - Starting ...
+2017-01-20 14:31:23,792 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 14:31:27,552 - runner - INFO - 393 com.hapiconnect 2016-07-21 15:19:03 analyzing
+2017-01-20 14:31:27,553 - runner - DEBUG - 393 extracting URLs
+2017-01-20 14:31:27,555 - runner - DEBUG - mitmdump -q -ns "traffic/mitm_extractURLs.py com.hapiconnect av1_data_trans '2016-07-21 15:19:03'" -r "/mnt/data/experiments/com.hapiconnect/av1_data_trans/2016-07-21_15:19:03/mitm.out" -w /dev/null
+2017-01-20 14:32:50,382 - runner - INFO - com.hapiconnect generating traffic map
+2017-01-20 14:34:37,832 - runner - INFO - ... finished
+2017-01-20 14:34:57,314 - runner - INFO - Starting ...
+2017-01-20 14:34:57,315 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 14:35:01,162 - runner - INFO - 393 com.hapiconnect 2016-07-21 15:19:03 analyzing
+2017-01-20 14:35:01,163 - runner - DEBUG - 393 extracting URLs
+2017-01-20 14:35:01,164 - runner - DEBUG - mitmdump -q -ns "traffic/mitm_extractURLs.py com.hapiconnect av1_data_trans '2016-07-21 15:19:03'" -r "/mnt/data/experiments/com.hapiconnect/av1_data_trans/2016-07-21_15:19:03/mitm.out" -w /dev/null
+2017-01-20 14:36:23,589 - runner - INFO - com.hapiconnect generating traffic map
+2017-01-20 14:36:34,290 - runner - INFO - 393 com.hapiconnect 2016-07-21 15:19:03 analyzing
+2017-01-20 14:36:34,291 - runner - DEBUG - 393 extracting IPs from pcap
+2017-01-20 14:36:34,304 - runner - DEBUG - tcpdump -r /mnt/data/experiments/com.hapiconnect/av1_data_trans/2016-07-21_15:19:03/tshark.pcap -w /mnt/data/experiments/com.hapiconnect/av1_data_trans/2016-07-21_15:19:03/tshark-filtered.pcap 'src 10.0.0.35 or dst 10.0.0.35'
+2017-01-20 14:36:34,314 - runner - DEBUG - tshark -r /mnt/data/experiments/com.hapiconnect/av1_data_trans/2016-07-21_15:19:03/tshark-filtered.pcap -Y "tcp.flags==2" -T fields -e ip.dst |  sort |  uniq |  awk '{printf("%s\n",$1)}' > dummy.txt
+2017-01-20 14:36:36,414 - runner - INFO - ... finished
+2017-01-20 14:39:48,836 - runner - INFO - Starting ...
+2017-01-20 14:39:48,837 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 14:39:52,915 - runner - INFO - 393 com.hapiconnect 2016-07-21 15:19:03 analyzing
+2017-01-20 14:39:52,916 - runner - DEBUG - 393 extracting IPs from pcap
+2017-01-20 14:39:52,938 - runner - DEBUG - tcpdump -r /mnt/data/experiments/com.hapiconnect/av1_data_trans/2016-07-21_15:19:03/tshark.pcap -w /mnt/data/experiments/com.hapiconnect/av1_data_trans/2016-07-21_15:19:03/tshark-filtered.pcap 'src 10.0.0.35 or dst 10.0.0.35'
+2017-01-20 14:39:52,950 - runner - DEBUG - tshark -r /mnt/data/experiments/com.hapiconnect/av1_data_trans/2016-07-21_15:19:03/tshark-filtered.pcap -Y "tcp.flags==2" -T fields -e ip.dst |  sort |  uniq |  awk '{printf("%s\n",$1)}' > dummy.txt
+2017-01-20 14:39:53,262 - runner - INFO - 174.142.38.101  already on record
+2017-01-20 14:39:53,263 - runner - INFO - 184.73.242.146  already on record
+2017-01-20 14:39:53,263 - runner - INFO - 54.243.55.41  already on record
+2017-01-20 14:39:55,620 - runner - INFO - ... finished
+2017-01-20 14:47:24,013 - runner - INFO - Starting ...
+2017-01-20 14:47:24,014 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 14:47:30,280 - runner - INFO - com.hapiconnect SSL analysis
+2017-01-20 14:47:39,064 - runner - DEBUG - com.hapiconnect -- hapi.lhealthcenter.com SSL analysis waiting for result
+2017-01-20 14:47:47,980 - runner - DEBUG - com.hapiconnect -- settings.crashlytics.com SSL analysis waiting for result
+2017-01-20 14:47:56,618 - runner - DEBUG - com.hapiconnect -- e.crashlytics.com SSL analysis waiting for result
+2017-01-20 14:48:05,428 - runner - DEBUG - com.hapiconnect -- hapi.lhealthcenter.com SSL analysis done
+2017-01-20 14:48:14,239 - runner - DEBUG - com.hapiconnect -- settings.crashlytics.com SSL analysis waiting for result
+2017-01-20 14:48:23,094 - runner - DEBUG - com.hapiconnect -- e.crashlytics.com SSL analysis waiting for result
+2017-01-20 14:48:31,909 - runner - DEBUG - com.hapiconnect -- settings.crashlytics.com SSL analysis waiting for result
+2017-01-20 14:48:40,920 - runner - DEBUG - com.hapiconnect -- e.crashlytics.com SSL analysis waiting for result
+2017-01-20 14:48:49,608 - runner - DEBUG - com.hapiconnect -- settings.crashlytics.com SSL analysis waiting for result
+2017-01-20 14:48:58,678 - runner - DEBUG - com.hapiconnect -- e.crashlytics.com SSL analysis waiting for result
+2017-01-20 14:49:07,540 - runner - DEBUG - com.hapiconnect -- settings.crashlytics.com SSL analysis waiting for result
+2017-01-20 14:49:16,347 - runner - DEBUG - com.hapiconnect -- e.crashlytics.com SSL analysis waiting for result
+2017-01-20 14:49:25,152 - runner - DEBUG - com.hapiconnect -- settings.crashlytics.com SSL analysis waiting for result
+2017-01-20 14:49:33,961 - runner - DEBUG - com.hapiconnect -- e.crashlytics.com SSL analysis waiting for result
+2017-01-20 14:49:42,765 - runner - DEBUG - com.hapiconnect -- settings.crashlytics.com SSL analysis waiting for result
+2017-01-20 14:49:51,570 - runner - DEBUG - com.hapiconnect -- e.crashlytics.com SSL analysis waiting for result
+2017-01-20 14:50:00,233 - runner - DEBUG - com.hapiconnect -- settings.crashlytics.com SSL analysis waiting for result
+2017-01-20 14:50:09,082 - runner - DEBUG - com.hapiconnect -- e.crashlytics.com SSL analysis waiting for result
+2017-01-20 14:50:17,894 - runner - DEBUG - com.hapiconnect -- settings.crashlytics.com SSL analysis waiting for result
+2017-01-20 14:50:26,696 - runner - DEBUG - com.hapiconnect -- e.crashlytics.com SSL analysis waiting for result
+2017-01-20 14:50:35,502 - runner - DEBUG - com.hapiconnect -- settings.crashlytics.com SSL analysis waiting for result
+2017-01-20 14:50:44,307 - runner - DEBUG - com.hapiconnect -- e.crashlytics.com SSL analysis waiting for result
+2017-01-20 14:50:53,119 - runner - DEBUG - com.hapiconnect -- settings.crashlytics.com SSL analysis waiting for result
+2017-01-20 14:51:04,169 - runner - INFO - Starting ...
+2017-01-20 14:51:04,169 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 14:51:14,720 - runner - INFO - ... finished
+2017-01-20 14:54:06,978 - runner - INFO - Starting ...
+2017-01-20 14:54:06,978 - runner - INFO - Log file is /usr/src/app/framework/log.out
+2017-01-20 14:54:11,604 - runner - DEBUG - INSERT INTO experiments SET package='com.hapiconnect', device='1', time='2017-01-20 14:54:11', test_case='av1_data_trans', log_folder='/media/exthdd/experiments/com.hapiconnect/device-1/av1_data_trans/2017-01-20_14:54:11' on duplicate key update package='com.hapiconnect', device='1', time='2017-01-20 14:54:11', test_case='av1_data_trans', log_folder='/media/exthdd/experiments/com.hapiconnect/device-1/av1_data_trans/2017-01-20_14:54:11' ;
+2017-01-20 14:54:16,511 - runner - DEBUG - stopping mitmproxy
+2017-01-20 14:54:16,526 - runner - DEBUG - stopping packet capture
+2017-01-20 14:54:16,532 - runner - DEBUG - copying hci bluetooth log
+2017-01-20 14:54:16,535 - runner - DEBUG - retrieving logcat logs
+2017-01-20 14:54:17,218 - runner - DEBUG - pulling full appliation backup

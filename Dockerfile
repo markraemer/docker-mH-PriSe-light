@@ -9,7 +9,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
   apt-get -y install apt-utils && \
   apt-get install -y \
-  dnsmasq hostapd iptables network-manager net-tools rfkill\
+  dnsmasq hostapd iptables network-manager net-tools rfkill tshark tcpdump \
   nano openssh-server gnome-terminal apache2 phpmyadmin\
   supervisor sudo \
   python mysql-server unzip default-jdk lib32stdc++6 lib32z1
