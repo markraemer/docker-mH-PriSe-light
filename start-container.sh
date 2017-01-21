@@ -4,7 +4,6 @@ sudo docker run \
 -v /var/mH-PriSe/mysql:/var/lib/mysql \
 -v /var/mH-PriSe/data:/mnt/data \
 -v `pwd`/conf/:/usr/src/app/config \
--v `pwd`/mH-PriSe-light:/usr/src/app/framework \
 -t \
 -i \
 -ti \
