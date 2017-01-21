@@ -5,7 +5,6 @@ sudo docker run \
 -v /var/mH-PriSe/data:/mnt/data \
 -v `pwd`/conf/:/usr/src/app/config \
 -v `pwd`/mH-PriSe-light:/usr/src/app/framework \
--v $HOME/.Xauthority:/home/rlogin/.Xauthority \
 -t \
 -i \
 -ti \
@@ -19,4 +18,4 @@ sudo docker run \
 --privileged \
 --net host \
 --name mh-prise \
-martin/test:v1
+mh-prise/alpha:v1

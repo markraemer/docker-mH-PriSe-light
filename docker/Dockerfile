@@ -17,12 +17,12 @@ RUN apt-get update && \
 ## setting up X11
 #RUN useradd -d /home/rlogin -m rlogin && echo 'rlogin:rlogin' | chpasswd
 # Replace 1000 with your user / group id
-RUN export uid=1000 gid=1000
+RUN export uid=0 gid=0
 #    mkdir -p /home/root && \
 #    echo "root:x:${uid}:${gid}:root,,,:/home/root:/bin/bash" >> /etc/passwd && \
 #    echo "root:x:${uid}:" >> /etc/group && \
-#    echo "root ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/rlogin && \
-#    chmod 0440 /etc/sudoers.d/rlogin && \
+#    echo "root ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/root && \
+#    chmod 0440 /etc/sudoers.d/root && \
 #    chown ${uid}:${gid} -R /home/root
 #USER rlogin
 #ENV HOME /home/rlogin
@@ -46,7 +46,6 @@ RUN echo "Include /etc/phpmyadmin/apache.conf" >> /etc/apache2/apache2.conf
 
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ADD setup-database.sh /setup-database.sh
-ADD hotspot.sh /hotspot.sh
 ADD run.sh /run.sh
 
 RUN chmod 755 /*.sh
