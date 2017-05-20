@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo docker run \
+docker run \
 -v /var/mH-PriSe/mysql:/var/lib/mysql \
 -v /var/mH-PriSe/data:/mnt/data \
 -v `pwd`/conf/:/usr/src/app/config \
